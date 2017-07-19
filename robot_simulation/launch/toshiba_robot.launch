@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="model" default="$(find robot_simulation)/URDF/toshiba_robot_r02.urdf"/>
+  <arg name="model" default="$(find robot_simulation)/URDF/sr_scara_hx.urdf"/>
   <arg name="gui" default="False" />
   <param name="robot_description" textfile="$(arg model)" />
   <param name="use_gui" value="$(arg gui)" />

@@ -4,14 +4,14 @@
   <!-- Launch Gazebo  -->
   <include file="$(find sr_scara_hx_gazebo)/launch/sr_scara_hx_world.launch" />   
 
-  <!-- ros_control seven dof arm launch file -->
-  <!-- include file="$(find seven_dof_arm_gazebo)/launch/seven_dof_arm_gazebo_states.launch" / -->   
+  <!-- ros_control launch file -->
+  <include file="$(find sr_scara_hx_control)/launch/sr_scara_hx_control.launch" />   
 
-  <!-- ros_control position control dof arm launch file -->
-  <!--<include file="$(find seven_dof_arm_gazebo)/launch/seven_dof_arm_gazebo_position.launch" />  -->
-
-  <!-- ros_control trajectory control dof arm launch file -->
+  <!-- ros_control trajectory control launch file -->
   <include file="$(find sr_scara_hx_gazebo)/launch/sr_scara_hx_trajectory_controller.launch" />    
+
+  <!-- moveit launch file -->
+  <include file="$(find sr_scara_hx_moveit_config)/launch/moveit_planning_execution.launch" />    
 
 
 </launch>
