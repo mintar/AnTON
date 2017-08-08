@@ -17,20 +17,20 @@
 <!--Links -->
 <link name="base_link">
  <visual>
-  <origin xyz="0 0 0.00158925" rpy="0 0 0" />
+  <origin xyz="0 0 0.151" rpy="0 0 0" />
    <geometry>
      <mesh filename="package://robot_simulation/meshes/base_R01.stl" scale="0.001 0.001 0.001"/>  
    </geometry>
    <material name="black"/>
  </visual>
  <collision>
-  <origin xyz="0 0 0.00158925" rpy="0 0 0" />
+  <origin xyz="0 0 0.151" rpy="0 0 0" />
    <geometry>
      <mesh filename="package://robot_simulation/meshes/base_R01.stl" scale="0.001 0.001 0.001"/>  
    </geometry>
  </collision>  
  <inertial>
-      <origin xyz="0 0 0.00158925" rpy="0 0 0"/>
+      <origin xyz="0 0 0.151" rpy="0 0 0"/>
       <mass value="30.0"/>
       <inertia
 	  ixx="1.0" ixy="0.0" ixz="0.0"
@@ -41,20 +41,20 @@
 
 <link name="link1">
  <visual>
-  <origin xyz="0 0 0" rpy="0 0 0" />
+  <origin xyz="-0.18 0 0.365" rpy="0 0 0" />
    <geometry>
      <mesh filename="package://robot_simulation/meshes/arm_link_R01.stl" scale="0.001 0.001 0.001"/>  
    </geometry>
    <material name="red"/>
  </visual>
  <collision>
-  <origin xyz="0 0 0" rpy="0 0 0" />
+  <origin xyz="-0.18 0 0.365" rpy="0 0 0" />
    <geometry>
      <mesh filename="package://robot_simulation/meshes/arm_link_R01.stl" scale="0.001 0.001 0.001"/>  
    </geometry>
  </collision>
  <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="-0.18 0 0.365" rpy="0 0 0"/>
       <mass value="10.0"/>
       <inertia
 	  ixx="1.0" ixy="0.0" ixz="0.0"
@@ -65,20 +65,20 @@
 
 <link name="link2">
  <visual>
-  <origin xyz="0.300 0 0" rpy="0 0 0" />
+  <origin xyz="-0.25 0 0.47" rpy="0 0 0" />
    <geometry>
      <mesh filename="package://robot_simulation/meshes/head_link_R01.stl" scale="0.001 0.001 0.001"/>  
    </geometry>
    <material name="black"/>
  </visual>
  <collision>
-  <origin xyz="0.300 0 0" rpy="0 0 0" />
+  <origin xyz="-0.25 0 0.47" rpy="0 0 0" />
    <geometry>
      <mesh filename="package://robot_simulation/meshes/head_link_R01.stl" scale="0.001 0.001 0.001"/>  
    </geometry>
   </collision>
  <inertial>
-      <origin xyz="0.300 0 0" rpy="0 0 0"/>
+      <origin xyz="-0.25 0 0.47" rpy="0 0 0"/>
       <mass value="10.0"/>
       <inertia
 	  ixx="1.0" ixy="0.0" ixz="0.0"
@@ -89,20 +89,20 @@
 
 <link name="probe">
  <visual>
-  <origin xyz="-0.65 0 0.43" rpy="0 0 0" />
+  <origin xyz="-0.7 0 0.43" rpy="0 0 0" />
   <geometry>
      <mesh filename="package://robot_simulation/meshes/End_link_R01.stl" scale="0.001 0.001 0.001"/>  
   </geometry>
   <material name="orange"/>
  </visual>
  <collision>
-  <origin xyz="-0.65 0 0.43" rpy="0 0 0" />
+  <origin xyz="-0.7 0 0.43" rpy="0 0 0" />
   <geometry>
      <mesh filename="package://robot_simulation/meshes/End_link_R01.stl" scale="0.001 0.001 0.001"/>  
   </geometry>
  </collision>
  <inertial>
-      <origin xyz="-0.65 0 0.43" rpy="0 0 0"/>
+      <origin xyz="-0.7 0 0.43" rpy="0 0 0"/>
       <mass value="2.0"/>
       <inertia
 	  ixx="1.0" ixy="0.0" ixz="0.0"
@@ -113,20 +113,20 @@
 
 <link name="gripper">
  <visual> 
-  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <origin xyz="-0.05 0 0" rpy="0 0 0"/>
   <geometry>
   <cylinder length="0.08" radius="0.04"/>
   </geometry>
   <material name="black"/>
  </visual> 
  <collision>
-  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <origin xyz="-0.05 0 0" rpy="0 0 0"/>
   <geometry>
   <cylinder length="0.08" radius="0.04"/>
   </geometry>
  </collision>
  <inertial>
-     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <origin xyz="-0.05 0 0" rpy="0 0 0"/>
      <mass value="0.3"/>
      <inertia
          ixx="1.0" ixy="0.0" ixz="0.0" 
@@ -137,20 +137,20 @@
 
 <link name="gripper_end_effector">
  <visual> 
-  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <origin xyz="-0.04 0 -0.01" rpy="0 0 0"/>
   <geometry>
   <cylinder length="0.04" radius="0.02"/>
   </geometry>
   <material name="black"/>
  </visual>
  <collision>
-  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <origin xyz="-0.04 0 -0.01" rpy="0 0 0"/>
   <geometry>
   <cylinder length="0.001" radius="0.004"/>
   </geometry>
  </collision>
  <inertial>
-     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <origin xyz="-0.04 0 -0.01" rpy="0 0 0"/>
      <mass value="0.1"/>
      <inertia
          ixx="1.0" ixy="0.0" ixz="0.0" 
